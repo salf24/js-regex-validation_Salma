@@ -5,7 +5,7 @@ const form = document.getElementById("validationForm");
 const fields = {
     fullName: /^[A-Za-z\s]+$/, // Only letters and spaces allowed
     email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, // Basic email format
-    phone: /^\d{10,20}$/, // 10 to 20 digits
+    phone: /^\d{10,15}$/, // 10 to 15 digits
     password: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/ // Min 8 chars, 1 uppercase, 1 lowercase, 1 number
 };
 
