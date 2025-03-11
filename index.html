@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Form Validation</title>
+    <title> User Form Validation</title>
 </head>
 <body>
 
     <form id="validationForm">
         <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName">
+        <input type="text" id="fullName" data-error="Only letters and spaces allowed.">
         <label id="fullNameError" class="error"></label>
 
         <label for="email">Email:</label>
-        <input type="email" id="email">
+        <input type="email" id="email" data-error="Enter a valid email.">
         <label id="emailError" class="error"></label>
 
         <label for="phone">Phone Number:</label>
-        <input type="text" id="phone">
+        <input type="text" id="phone" data-error="Enter 10-20 digits only.">
         <label id="phoneError" class="error"></label>
 
         <label for="password">Password:</label>
-        <input type="password" id="password">
+        <input type="password" id="password" data-error="Min 8 chars, 1 uppercase, 1 lowercase, 1 number.">
         <label id="passwordError" class="error"></label>
 
         <button type="submit">Submit</button>
